@@ -409,7 +409,6 @@ input:hover
   padding-right: 5vmax;
   font-size: 1.75rem;
   padding-left: 5vmax;
-  display: flex;
   justify-content: right;
   font-weight: bolder;
   height: fit-content;
