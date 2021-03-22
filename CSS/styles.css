@@ -6,10 +6,13 @@
 html
 {
   scroll-behavior: smooth;
+  height: -webkit-fill-available;
 }
 
 body
 {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
   display: block;
   place-items: center;
   margin-top: 0;
