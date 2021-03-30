@@ -89,7 +89,7 @@
       <h1 class="animate__animated animate__fadeInUp" id="output-message">Hello, World</h1>
       <form name="input-message" onsubmit="getmessage(); return false">
         <p id="text-message" style="line-height: 2.6">I might have a message for you</p>
-        <input id="input-textbox" type="text" name="name" autocomplete="off" placeholder="Enter Your Name"/>
+        <input id="input-textbox" type="text" name="name" pattern="[A-Za-z]{20}" maxlength="20" autocomplete="off" placeholder="Enter Your Name"/>
         <input type="button" id="submitbtn" value="Submit" onclick="getmessage();" onclick="SubForm();" />
       </form>
     </div>
