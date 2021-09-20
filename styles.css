@@ -244,6 +244,10 @@ button {
    margin-bottom: 10px;
 }
 
+#connect {
+   height: fit-content;
+}
+
 @media (min-width: 992px) {
    .navbar {
       height: 70px;
@@ -347,5 +351,9 @@ button {
 
    .social:hover {
       transform: scale(1.15);
+   }
+
+   #connect {
+      height: 100%;
    }
 }
