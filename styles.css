@@ -217,6 +217,11 @@ p {
 #education {
    height: fit-content;
 }
+
+#home {
+   background-color: #001a35;
+}
+
 #connect {
    background-image: linear-gradient(to top, #001a35, #181818);
    transition: 1.2s ease-in-out;
@@ -332,6 +337,8 @@ button {
       padding-bottom: 0px;
       padding-top: 10%;
    }
+   
+
 
    .card-body {
       height: 180px;
