@@ -26,3 +26,12 @@ const sendEmail = () => {
 
    window.alert("You will be Contacted Soon");
 };
+
+tippy('#copy-email', {
+   content: 'Click to Copy Email Adress!',
+   trigger: 'hover',
+});
+
+const copyEmail = () => {
+   navigator.clipboard.writeText("suhailahmed2001sam@gmail.com");
+}

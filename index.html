@@ -359,7 +359,7 @@
                      </a>
                   </div>
                   <div class="col social">
-                     <button>
+                     <button onclick="copyEmail();" id="copy-email">
                         <figure class="figure flex-center">
                            <img class="social-icon" loading="lazy" src="Assets/mail.svg">
                            <figcaption class="figure-caption social-name text-center">suhailahmed2001
@@ -397,6 +397,13 @@
          });
       </script>
       <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+      <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+      <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
       <script src="app.js"></script>
+      <script>
+         tippy('#copy-email', {
+            content: 'Click to Copy Email Adress!',
+         });
+      </script>
    </body>
 </html>
