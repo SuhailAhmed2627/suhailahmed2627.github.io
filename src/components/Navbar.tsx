@@ -41,8 +41,8 @@ const Navbar = ({
 			className={`fixed top-0 z-20 h-[100px] ${
 				scrollY != 0
 					? scrollDirection == "up"
-						? "shadow-lg backdrop-blur-lg"
-						: "-translate-y-full"
+						? "shadow-lg backdrop-blur-lg h-[70px] "
+						: "-translate-y-full h-[70px] "
 					: ""
 			} w-[100%] bg-transparent flex flex-row justify-between px-[25px] md:px-[40px]`}
 		>
@@ -50,15 +50,15 @@ const Navbar = ({
 				<Image height={60} src={"/assets/images/SALOGO.png"}></Image>
 			</Center>
 			<Box className="hidden md:flex">
-				<Group className="h-[100px] gap-5" grow>
+				<Group align={"center"} className="h-full gap-5" grow>
 					{links.map((link, index) => (
-						<Center className="px-5 py-5 hover:text-secondary hover:cursor-pointer">
+						<Center className=" px-5 py-5 hover:text-secondary hover:cursor-pointer">
 							<a className="font-mono" href={link.href}>
 								{link.name}
 							</a>
 						</Center>
 					))}
-					<Center className="px-5 py-5 ">
+					<Center className="px-5 py-5 max-h-[70px]">
 						<Button
 							onClick={() =>
 								window.open(
