@@ -11,8 +11,10 @@
     "@mantine/core": "^4.2.11",
     "@mantine/hooks": "^4.2.11",
     "@mantine/next": "^4.2.11",
+    "animate.css": "^4.1.1",
     "next": "12.1.0",
     "react": "17.0.2",
+    "react-animation-on-scroll": "^5.1.0",
     "react-dom": "17.0.2",
     "typewriter-effect": "^2.19.0"
   },

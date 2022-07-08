@@ -12,6 +12,20 @@ function App({ Component, pageProps }: AppProps) {
 		<>
 			<Head>
 				<title>Suhail's Portfolio</title>
+				<meta property="og:title" content="Suhail's Portfolio" />
+				<meta
+					property="og:description"
+					content="I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences."
+				/>
+				<meta
+					property="og:image"
+					content="/assets/images/social-frame.jpg"
+				></meta>
+				<link
+					rel="icon"
+					href="/assets/images/SALOGO.png"
+					type="image/x-icon"
+				></link>
 				<meta
 					name="viewport"
 					content="initial-scale=1.0, width=device-width"

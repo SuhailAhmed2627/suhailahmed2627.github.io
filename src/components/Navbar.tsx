@@ -52,7 +52,10 @@ const Navbar = ({
 			<Box className="hidden md:flex">
 				<Group align={"center"} className="h-full gap-5" grow>
 					{links.map((link, index) => (
-						<Center className=" px-5 py-5 hover:text-secondary hover:cursor-pointer">
+						<Center
+							key={index}
+							className=" px-5 py-5 hover:text-secondary hover:cursor-pointer"
+						>
 							<a className="font-mono" href={link.href}>
 								{link.name}
 							</a>

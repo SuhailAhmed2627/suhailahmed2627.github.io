@@ -7,7 +7,7 @@ const CustomButton = (props: any) => {
 			variant={"outline"}
 			classNames={{
 				outline:
-					"rounded-sm border-secondary text-secondary font-mono font-normal",
+					"rounded-sm hover:bg-secondary/10 border-secondary text-secondary font-mono font-normal",
 			}}
 			{...props}
 		>

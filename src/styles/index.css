@@ -7,6 +7,9 @@ body {
 	width: 100vw;
 	overflow-x: hidden;
 }
+html {
+	scroll-behavior: smooth;
+}
 
 *::-webkit-scrollbar {
 	width: 6px;
@@ -29,7 +32,10 @@ body {
 @import "tailwindcss/base";
 
 @layer base {
-	html {
+	html,
+	a,
+	*,
+	.mantine-Text-root {
 		@apply text-slate-300;
 	}
 	body {

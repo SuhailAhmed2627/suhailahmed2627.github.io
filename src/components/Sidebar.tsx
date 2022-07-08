@@ -13,7 +13,10 @@ const Sidebar = ({ sidebarOpened }: { sidebarOpened: boolean }) => {
 			<Center className="h-full w-full">
 				<Stack>
 					{links.map((link, index) => (
-						<Center className="w-full py-5 hover:text-secondary hover:cursor-pointer">
+						<Center
+							key={index}
+							className="w-full py-5 hover:text-secondary hover:cursor-pointer"
+						>
 							<a className="font-mono" href={link.href}>
 								{link.name}
 							</a>

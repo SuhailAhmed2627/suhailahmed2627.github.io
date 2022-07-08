@@ -6,3 +6,5 @@ export { default as Introduction } from "./Introduction";
 export { default as AboutMe } from "./AboutMe";
 export { default as Experience } from "./Experience";
 export { default as Projects } from "./Projects";
+export { default as OtherProjects } from "./OtherProjects";
+export { default as GetInTouch } from "./GetInTouch";

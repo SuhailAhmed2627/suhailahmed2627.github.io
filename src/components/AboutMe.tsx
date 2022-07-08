@@ -1,30 +1,27 @@
 import { Center, Box, Stack, Text, Image } from "@mantine/core";
 import React from "react";
 
-const content = [
-	`A typical geek who balances between "May the Force be with You" and "May the Mass-times-Acceleration be with you," Love Programming, Solving Puzzles, Maths, Physics, and Movies. In a mathematical sense, Everything Suhail loves, falls in the union of anything that has learning.`,
-	`I love Problem-Solving in perhaps the most straightforward way, thanks to my laziness, but on the other hand, if the problem is not solved efficiently, my need for perfection kicks in. I think that defines me more than anything could do.`,
-];
-
-const recentTechnologies = [
-	"TypeScript",
-	"React",
-	"GoLang",
-	"NodeJS",
-	"Fastify",
-	"AWS Cloud",
-];
-
-const AboutMe = () => {
+const AboutMe = ({
+	title,
+	content,
+	recentTechnologies,
+}: {
+	title: string;
+	content: string[];
+	recentTechnologies: string[];
+}) => {
 	return (
-		<Center id="about" className="py-[100px] min-h-[100vh] h-max">
-			<Box className="w-full lg:w-[1200px] px-[40px] sm:px-[60px] md:px-[150px] lg:px-[30px] xl:px-[50px] flex gap-[5%] flex-col md:flex-row">
+		<Center
+			id="about"
+			className="cursor-default py-[100px] min-h-[100vh] h-max"
+		>
+			<Box className="  tw-full lg:w-[1200px] px-[40px] sm:px-[60px] md:px-[150px] lg:px-[30px] xl:px-[50px] flex gap-[5%] flex-col md:flex-row">
 				<Stack className="w-full md:w-[55%]">
-					<Center className="flex w-[100%] font-semibold font-display [font-size:clamp(26px,5vw,32px)] whitespace-nowrap sm:w-max after:block after:ml-[10px] after:md:ml-[10px] after:content[''] after:h-[1px] after:relative after:top-[-2px] text-slate-200 after:bg-slate-600 after:w-[100%] sm:after:w-[200px] md:after:w-[300px]">
-						About Me
+					<Center className="  flex w-[100%] font-semibold font-display [font-size:clamp(26px,5vw,32px)] whitespace-nowrap sm:w-max after:block after:ml-[10px] after:md:ml-[10px] after:content[''] after:h-[1px] after:relative after:top-[-2px] text-slate-200 after:bg-slate-600 after:w-[100%] sm:after:w-[200px] md:after:w-[300px]">
+						{title}
 					</Center>
 					{content.map((text, index) => (
-						<Text>{text}</Text>
+						<Text key={index}>{text}</Text>
 					))}
 					<Text>
 						Here are a few technologies I’ve been working with recently:

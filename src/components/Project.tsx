@@ -11,7 +11,7 @@ const Project = ({
 		name: string;
 		type: string;
 		imageSrc: string;
-		description: JSX.Element;
+		description: string;
 		stack: string[];
 		links: {
 			name: string;
@@ -45,12 +45,18 @@ const Project = ({
 					<Text className="text-[12px] font-mono text-secondary my-1">
 						{project.type}
 					</Text>
-					<Text className="font-display font-semibold [font-size:clamp(24px,5vw,28px)] text-slate-200 hover:text-secondary my-1">
-						{project.name}
+					<Text className=" my-1">
+						<a
+							className="cursor-pointer font-display font-semibold [font-size:clamp(24px,5vw,28px)] text-slate-200 hover:text-secondary"
+							href={project.links[0].url}
+						>
+							{project.name}
+						</a>
 					</Text>
-					<Box className="md:[box-shadow:0_10px_30px_-15px_#000000] my-3 md:p-5 md:bg-tertiary md:rounded-md">
-						{project.description}
-					</Box>
+					<Box
+						dangerouslySetInnerHTML={{ __html: project.description }}
+						className="md:[box-shadow:0_10px_30px_-15px_#000000] my-3 md:p-5 md:bg-tertiary md:rounded-md"
+					></Box>
 					<Group
 						className={`my-1 ${
 							!isLeft && "md:justify-end"
@@ -92,7 +98,7 @@ const Project = ({
 						image: "!h-full",
 					}}
 					className="h-full"
-					src="https://brittanychiang.com/static/3b4d6e8f44baf7e6d7a0ed4b3e4d8d39/f47db/halcyon.avif"
+					src={project.imageSrc}
 				/>
 			</Box>
 		</Box>

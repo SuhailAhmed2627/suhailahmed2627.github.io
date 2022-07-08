@@ -5,7 +5,7 @@ const colors = {
 		DEFAULT: "#0a192f",
 	},
 	secondary: {
-		DEFAULT: "#ffffff",
+		DEFAULT: "#00B4D8",
 	},
 	tertiary: {
 		DEFAULT: "#112240",
