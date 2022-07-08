@@ -80,13 +80,7 @@ const Home = ({
 }: IndexProps) => {
 	return (
 		<Stack className="w-full">
-			<AnimationOnScroll
-				animateOnce
-				duration={0.5}
-				animateIn="animate__fadeIn"
-			>
-				<Introduction {...introductionJson} />
-			</AnimationOnScroll>
+			<Introduction {...introductionJson} />
 			<AnimationOnScroll
 				animateOnce
 				duration={0.5}
