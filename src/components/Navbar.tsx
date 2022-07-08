@@ -47,7 +47,9 @@ const Navbar = ({
 			} w-[100%] bg-transparent flex flex-row justify-between px-[25px] md:px-[40px]`}
 		>
 			<Center className="h-100">
-				<Image height={60} src={"/assets/images/SALOGO.png"}></Image>
+				<a href="/#">
+					<Image height={60} src={"/assets/images/SALOGO.png"}></Image>
+				</a>
 			</Center>
 			<Box className="hidden md:flex">
 				<Group align={"center"} className="h-full gap-5" grow>
@@ -75,7 +77,13 @@ const Navbar = ({
 					</Center>
 				</Group>
 			</Box>
-			<Center className="relative z-50 md:hidden">
+			<Center
+				className={`relative ${
+					sidebarOpened && scrollDirection == "down"
+						? "translate-y-[200%]"
+						: ""
+				} z-50 md:hidden`}
+			>
 				<Burger
 					opened={sidebarOpened}
 					onClick={() => setSidebarOpened((prev) => !prev)}

@@ -23,7 +23,7 @@ const Introduction = ({
 	functionButton: string;
 }) => {
 	return (
-		<Center className="py-[100px] h-[100vh]">
+		<Center id="#" className="py-[100px] h-[100vh]">
 			<Stack
 				spacing={0}
 				className="w-full cursor-default lg:w-[1200px] px-[40px] sm:px-[60px] md:px-[150px] lg:px-[30px] xl:px-[50px] "
