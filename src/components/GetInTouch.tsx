@@ -28,7 +28,7 @@ const GetInTouch = ({
 				</Text>
 				<Text
 					align="center"
-					className="text-[22px] font-display text-slate-400 leading-tight"
+					className=" text-[14px] md:text-[22px] font-display text-slate-400 leading-tight"
 				>
 					{content}
 				</Text>

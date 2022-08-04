@@ -57,7 +57,17 @@ const Introduction = ({
 					.
 				</Text>
 				<Box className="w-max mt-[30px] md:mt-[40px]">
-					<Button size="md">{functionButton}</Button>
+					<Button
+						onClick={() =>
+							window.open(
+								"/assets/files/suhail-ahmed-resume.pdf",
+								"_blank"
+							)
+						}
+						size="md"
+					>
+						{functionButton}
+					</Button>
 				</Box>
 			</Stack>
 		</Center>

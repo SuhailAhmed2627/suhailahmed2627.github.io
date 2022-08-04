@@ -6,13 +6,13 @@ const SideElements = () => {
 	return (
 		<>
 			<Stack
-				className="hidden md:flex w-[40px] bottom-0 fixed right-auto left-[40px] after:content-[''] after:w-[1px] after:h-[90px] after:my-0 after:mx-auto after:bg-slate-400"
+				className="hidden z-40 md:flex w-[40px] bottom-0 fixed right-auto left-[40px] after:content-[''] after:w-[1px] after:h-[90px] after:my-0 after:mx-auto after:bg-slate-400"
 				aria-orientation="vertical"
 			>
 				<Socials />
 			</Stack>
 			<Stack
-				className="hidden md:flex w-[40px] bottom-0 fixed left-auto right-[40px] after:content-[''] after:w-[1px] after:h-[90px] after:my-0 after:mx-auto after:bg-slate-400"
+				className="hidden z-40 md:flex w-[40px] bottom-0 fixed left-auto right-[40px] after:content-[''] after:w-[1px] after:h-[90px] after:my-0 after:mx-auto after:bg-slate-400"
 				aria-orientation="vertical"
 			>
 				<a
