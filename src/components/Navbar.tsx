@@ -56,9 +56,12 @@ const Navbar = ({
 					{links.map((link, index) => (
 						<Center
 							key={index}
-							className=" px-5 py-5 hover:text-secondary hover:cursor-pointer"
+							className="px-5 py-5 group hover:cursor-pointer"
 						>
-							<a className="font-mono" href={link.href}>
+							<a
+								className="font-mono group-hover:tracking-wide group-hover:font-semibold group-hover:text-secondary"
+								href={link.href}
+							>
 								{link.name}
 							</a>
 						</Center>
