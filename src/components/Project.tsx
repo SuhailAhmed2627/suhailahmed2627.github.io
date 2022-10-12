@@ -92,6 +92,7 @@ const Project = ({
 				} row-span-full md:rounded-lg bg-primary md:overflow-hidden`}
 			>
 				<Image
+					alt="project image"
 					classNames={{
 						figure: "h-full",
 						imageWrapper: "h-full",

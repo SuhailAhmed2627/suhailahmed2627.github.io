@@ -9,7 +9,8 @@ const Socials = () => {
 			{socialsArray.map((social, index) => {
 				return (
 					<a
-						onClick={() => window.open(social.url, "_blank")}
+						href={social.url}
+						target="_blank"
 						key={index}
 						className="inline-block mx-2 cursor-pointer"
 					>

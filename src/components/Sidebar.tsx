@@ -24,6 +24,7 @@ const Sidebar = ({ sidebarOpened }: { sidebarOpened: boolean }) => {
 					))}
 					<Center className="w-full py-5 ">
 						<Button
+							ariaLabel="My Resume"
 							size="lg"
 							onClick={() =>
 								window.open(

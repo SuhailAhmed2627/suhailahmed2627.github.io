@@ -38,8 +38,9 @@ const AboutMe = ({
 				<Box className="flex mt-[10%] md:mt-0 flex-row items-center justify-center md:justify-start w-full md:w-[40%]">
 					<Box className="rounded-lg z-10 block w-[300px] h-[300px] after:z-[-100] after:rounded-lg after:overflow-hidden after:w-[300px] after:h-[300px] after:top-5 after:left-5 after:-translate-y-[100%] after:relative after:block after:contents[''] after:border-2 after:border-secondary hover:after:-translate-y-[102.5%] hover:after:-translate-x-[2.5%] after:transition-all">
 						<Image
+							alt="Profile Picture"
 							className="rounded-lg overflow-hidden"
-							src={"/assets/images/suhail-ahmed-image.jpg"}
+							src={"/assets/images/suhail-ahmed-image.webp"}
 						></Image>
 					</Box>
 				</Box>

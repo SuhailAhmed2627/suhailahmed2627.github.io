@@ -57,7 +57,7 @@
 			{
 				"name": "Pragyan Premiere League",
 				"type": "Delta Force Project",
-				"imageSrc": "/assets/images/projects/ppl.jpg",
+				"imageSrc": "/assets/images/projects/ppl.webp",
 				"description": "An Online Fantasy Cricket League where users create, buy, manage their own cricket team and compete with others on the leader board.",
 				"stack": ["React", "GoLang", "MySQL", "MUI", "GorrillaSockets"],
 				"links": [
@@ -70,7 +70,7 @@
 			{
 				"name": "Fotos",
 				"type": "MS Engage 2022 Project",
-				"imageSrc": "/assets/images/projects/fotos.jpg",
+				"imageSrc": "/assets/images/projects/fotos.webp",
 				"description": "A photo sharing platform with face recognition to filter out user’s photos from a set of photos. Qualified for Microsoft Engage 2022 as a Project.",
 				"stack": ["React", "TypeScript", "TailWindCSS", "AWS", "GoLang"],
 				"links": [
@@ -83,7 +83,7 @@
 			{
 				"name": "Aaveg 2022 Mainsite",
 				"type": "Aaveg 2022 Websites",
-				"imageSrc": "/assets/images/projects/aaveg.jpg",
+				"imageSrc": "/assets/images/projects/aaveg.webp",
 				"description": "Developed and Deployed to display Countdown, Events, Scoreboard, Squad Details and Team members. Integrated a CMS to update events and scoreboard. Used redis and service workers to facilitate caching data and images for quick access.",
 				"stack": [
 					"React",

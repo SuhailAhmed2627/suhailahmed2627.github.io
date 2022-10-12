@@ -47,8 +47,12 @@ const Navbar = ({
 			} w-[100%] bg-transparent flex flex-row justify-between px-[25px] md:px-[40px]`}
 		>
 			<Center className="h-100">
-				<a href="/#">
-					<Image height={60} src={"/assets/images/SALOGO.png"}></Image>
+				<a aria-label="Click Here to go to Top" href="/#">
+					<Image
+						alt="Suhail Ahmed Logo"
+						height={60}
+						src={"/assets/images/SALOGO.webp"}
+					></Image>
 				</a>
 			</Center>
 			<Box className="hidden md:flex">
@@ -68,6 +72,7 @@ const Navbar = ({
 					))}
 					<Center className="px-5 py-5 max-h-[70px]">
 						<Button
+							ariaLabel="My Resume"
 							onClick={() =>
 								window.open(
 									"/assets/files/suhail-ahmed-resume.pdf",

@@ -34,6 +34,7 @@ const GetInTouch = ({
 				</Text>
 				<Box className="m-10">
 					<Button
+						ariaLabel="Email"
 						component="a"
 						size={"xl"}
 						href={"mailto:suhailahmed2001sam@gmail.com"}

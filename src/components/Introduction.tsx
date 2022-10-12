@@ -58,6 +58,7 @@ const Introduction = ({
 				</Text>
 				<Box className="w-max mt-[30px] md:mt-[40px]">
 					<Button
+						ariaLabel="My Resume"
 						onClick={() =>
 							window.open(
 								"/assets/files/suhail-ahmed-resume.pdf",

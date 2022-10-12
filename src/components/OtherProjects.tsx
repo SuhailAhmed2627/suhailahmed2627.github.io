@@ -1,4 +1,4 @@
-import { Box, Center, Grid, Group, Text, Image, Stack } from "@mantine/core";
+import { Box, Center, Grid, Group, Text, Stack } from "@mantine/core";
 import React, { useState } from "react";
 import { Button } from ".";
 import Icon from "./Icon";
@@ -107,7 +107,11 @@ const OtherProjects = ({
 				</Grid>
 				{otherProjects.length > 6 && (
 					<Box className="m-10">
-						<Button size={"lg"} onClick={() => setShowMore(!showMore)}>
+						<Button
+							ariaLabel={showMore ? "Show Less" : "Show More"}
+							size={"lg"}
+							onClick={() => setShowMore(!showMore)}
+						>
 							{showMore ? "Show Less" : "Show More"}
 						</Button>
 					</Box>
