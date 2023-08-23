@@ -19,14 +19,26 @@
 			"TypeScript",
 			"React",
 			"GoLang",
-			"NodeJS",
-			"Fastify",
-			"AWS Cloud"
+			"Jest",
+			"AzureDevOps",
+			"Fastify"
 		]
 	},
 	"experience": {
 		"title": "Where I've Worked",
 		"experiences": [
+			{
+				"company": "Microsoft",
+				"companyUrl": "https://www.microsoft.com/",
+				"role": "Software Engineer Intern",
+				"startDate": "May 2023",
+				"endDate": "July 2023",
+				"description": [
+					"Worked on Visio Online, a web-based diagramming tool with 1.2M+ daily active users.",
+					"Leveraged TypeScript, React, Redux and Jest to build and test various components for a feature in the vast client-side codebase, which is part of 1JS",
+					"Enhanced client-side approximation engine for optimal performance and functionality of the feature"
+				]
+			},
 			{
 				"company": "Delta Force",
 				"companyUrl": "https://delta.nitt.edu/",
@@ -42,11 +54,11 @@
 				"company": "Aaveg 2022",
 				"companyUrl": "https://aaveg.in/",
 				"role": "Head, Web Operations",
-				"startDate": "January 2021",
-				"endDate": "Present",
+				"startDate": "January 2022",
+				"endDate": "December 2022",
 				"description": [
 					"Head of the Web Operations team of Aaveg, the annual inter-hostel sports and cultural extravaganza of NIT, Trichy.",
-					"Leading a team of 7 to develop and deploy websites and apps for 1,000+freshers."
+					"Lead a team of 7 to develop and deploy websites and apps for 1,000+freshers."
 				]
 			}
 		]
@@ -55,15 +67,28 @@
 		"title": "Projects",
 		"projects": [
 			{
-				"name": "Pragyan Premiere League",
+				"name": "Arcadia '23",
 				"type": "Delta Force Project",
-				"imageSrc": "/assets/images/projects/ppl.webp",
-				"description": "An Online Fantasy Cricket League where users create, buy, manage their own cricket team and compete with others on the leader board.",
-				"stack": ["React", "GoLang", "MySQL", "MUI", "GorrillaSockets"],
+				"imageSrc": "/assets/images/projects/arcadia.webp",
+				"description": "A strategy-based game where you collect powerful mini-conquerors (or minicons) with special and unique abilities and challenge opponents",
+				"stack": [ "React", "React Query", "TypeScript", "TailWindCSS", "GoLang"],
 				"links": [
 					{
 						"name": "External",
-						"url": "https://pragyan.org/22/home/events/manigma/pragyan_premier_league/"
+						"url": "https://arcadia-docs.vercel.app/"
+					}
+				]
+			},
+			{
+				"name": "Student Dashboard",
+				"type": "NITT Project",
+				"imageSrc": "/assets/images/projects/dashboard.webp",
+				"description": "A dashboard for students to register for mess and hostel, manage clubs and bills, and requisite documents.",
+				"stack": ["NextJS", "TypeScript", "MongoDB"],
+				"links": [
+					{
+						"name": "External",
+						"url": "https://dashboard.nitt.edu/"
 					}
 				]
 			},
@@ -77,26 +102,6 @@
 					{
 						"name": "Github",
 						"url": "https://github.com/SuhailAhmed2627/fotos"
-					}
-				]
-			},
-			{
-				"name": "Aaveg 2022 Mainsite",
-				"type": "Aaveg 2022 Websites",
-				"imageSrc": "/assets/images/projects/aaveg.webp",
-				"description": "Developed and Deployed to display Countdown, Events, Scoreboard, Squad Details and Team members. Integrated a CMS to update events and scoreboard. Used redis and service workers to facilitate caching data and images for quick access.",
-				"stack": [
-					"React",
-					"TypeScript",
-					"MantineUI",
-					"Fastify",
-					"MongoDB",
-					"Redis"
-				],
-				"links": [
-					{
-						"name": "External",
-						"url": "https://aaveg.in/22/"
 					}
 				]
 			}
